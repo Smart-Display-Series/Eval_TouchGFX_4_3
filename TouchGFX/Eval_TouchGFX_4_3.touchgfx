@@ -1,0 +1,468 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Components": [
+          {
+            "Type": "Image",
+            "RelativeFilename": "background.png",
+            "Alpha": 255,
+            "Name": "background",
+            "X": 0,
+            "Y": 0,
+            "Width": 480,
+            "Height": 272,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "ImageButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "LockFlexButtonToImageSize": true,
+                "ImageReleased": "next_button_released.png",
+                "ImagePressed": "next_button_pressed.png"
+              }
+            ],
+            "Name": "nextButton",
+            "X": 419,
+            "Y": 211,
+            "Width": 45,
+            "Height": 45,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Gauge",
+            "FileNameBackground": "gauge01_background.png",
+            "BackgroundOffsetX": 0,
+            "BackgroundOffsetY": 0,
+            "RotationCenterX": 138,
+            "RotationCenterY": 138,
+            "StartAngle": -130,
+            "EndAngle": 130,
+            "RangeMin": 10,
+            "RangeMax": 140,
+            "InitialValue": 10,
+            "UseAnimation": false,
+            "Easing": "Linear",
+            "EasingOption": "In",
+            "FileNameNeedle": "gauge01_needle.png",
+            "NeedleRotationCenterX": 11,
+            "NeedleRotationCenterY": 117,
+            "NeedleMovingRenderingAlgorithm": "Bilinear Interpolation",
+            "NeedleSteadyRenderingAlgorithm": "Bilinear Interpolation",
+            "UseArc": true,
+            "FileNameArc": "gauge01_dot_overlay_small.png",
+            "ArcColor": {
+              "Red": 20,
+              "Green": 151,
+              "Blue": 197
+            },
+            "SetArcPosition": true,
+            "ArcX": 48,
+            "ArcY": 47,
+            "ArcWidth": 182,
+            "ArcHeight": 146,
+            "ArcRadius": 85,
+            "ArcLineWidth": 9,
+            "ArcCapStyle": "Butt",
+            "ArcOnTopOfNeedle": false,
+            "Alpha": 255,
+            "Name": "gauge1",
+            "X": 102,
+            "Y": 22,
+            "Width": 276,
+            "Height": 228,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "ChangeScreen",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "nextButton"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Screen2"
+            }
+          }
+        ],
+        "Name": "Screen1",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 7200
+      },
+      {
+        "Components": [
+          {
+            "Type": "Image",
+            "RelativeFilename": "background.png",
+            "Alpha": 255,
+            "Name": "background",
+            "X": 0,
+            "Y": 0,
+            "Width": 480,
+            "Height": 272,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "ImageButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "LockFlexButtonToImageSize": true,
+                "ImageReleased": "next_button_released.png",
+                "ImagePressed": "next_button_pressed.png"
+              }
+            ],
+            "Name": "nextButton",
+            "X": 419,
+            "Y": 211,
+            "Width": 45,
+            "Height": 45,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Gauge",
+            "FileNameBackground": "gauge02_background.png",
+            "BackgroundOffsetX": 0,
+            "BackgroundOffsetY": 0,
+            "RotationCenterX": 110,
+            "RotationCenterY": 110,
+            "StartAngle": -130,
+            "EndAngle": 130,
+            "RangeMin": 0,
+            "RangeMax": 100,
+            "InitialValue": 0,
+            "UseAnimation": true,
+            "Easing": "Cubic",
+            "EasingOption": "InOut",
+            "FileNameNeedle": "gauge02_needle.png",
+            "NeedleRotationCenterX": 13,
+            "NeedleRotationCenterY": 50,
+            "NeedleMovingRenderingAlgorithm": "Bilinear Interpolation",
+            "NeedleSteadyRenderingAlgorithm": "Bilinear Interpolation",
+            "UseArc": false,
+            "ArcColor": {
+              "Red": 20,
+              "Green": 151,
+              "Blue": 197
+            },
+            "SetArcPosition": false,
+            "ArcX": 0,
+            "ArcY": 0,
+            "ArcWidth": 0,
+            "ArcHeight": 0,
+            "ArcRadius": 0,
+            "ArcLineWidth": 0,
+            "ArcCapStyle": "Butt",
+            "ArcOnTopOfNeedle": false,
+            "Alpha": 255,
+            "Name": "gauge1",
+            "X": 130,
+            "Y": 26,
+            "Width": 220,
+            "Height": 220,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Image",
+            "RelativeFilename": "gauge02_icon_level00.png",
+            "Alpha": 255,
+            "Name": "icon",
+            "X": 219,
+            "Y": 198,
+            "Width": 42,
+            "Height": 26,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "TextArea",
+            "TextId": "SingleUseId1",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 33,
+              "Green": 36,
+              "Blue": 50
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId2",
+              "UseBuffer": true,
+              "BufferSize": 10
+            },
+            "Name": "readoutText",
+            "X": 210,
+            "Y": 159,
+            "Width": 60,
+            "Height": 39,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "ChangeScreen",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "nextButton"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Screen3"
+            }
+          },
+          {
+            "InteractionName": "NewGaugeValue",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerGaugeValueSet",
+              "TriggerComponent": "gauge1"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "newGaugeValue"
+            }
+          }
+        ],
+        "Name": "Screen2",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0
+      },
+      {
+        "Components": [
+          {
+            "Type": "Image",
+            "RelativeFilename": "background.png",
+            "Alpha": 255,
+            "Name": "background",
+            "X": 0,
+            "Y": 0,
+            "Width": 480,
+            "Height": 272,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "FlexButton",
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "ImageButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "LockFlexButtonToImageSize": true,
+                "ImageReleased": "next_button_released.png",
+                "ImagePressed": "next_button_pressed.png"
+              }
+            ],
+            "Name": "nextButton",
+            "X": 419,
+            "Y": 211,
+            "Width": 46,
+            "Height": 46,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Type": "Gauge",
+            "FileNameBackground": "gauge03_background.png",
+            "BackgroundOffsetX": 35,
+            "BackgroundOffsetY": 39,
+            "RotationCenterX": 158,
+            "RotationCenterY": 172,
+            "StartAngle": -68,
+            "EndAngle": 68,
+            "RangeMin": 0,
+            "RangeMax": 100,
+            "InitialValue": 0,
+            "UseAnimation": false,
+            "Easing": "Cubic",
+            "EasingOption": "Out",
+            "FileNameNeedle": "gauge03_needle.png",
+            "NeedleRotationCenterX": 6,
+            "NeedleRotationCenterY": 169,
+            "NeedleMovingRenderingAlgorithm": "Bilinear Interpolation",
+            "NeedleSteadyRenderingAlgorithm": "Bilinear Interpolation",
+            "UseArc": true,
+            "FileNameArc": "gauge03_fill.png",
+            "ArcColor": {
+              "Red": 20,
+              "Green": 151,
+              "Blue": 197
+            },
+            "SetArcPosition": true,
+            "ArcX": 35,
+            "ArcY": 39,
+            "ArcWidth": 250,
+            "ArcHeight": 111,
+            "ArcRadius": 141,
+            "ArcLineWidth": 0,
+            "ArcCapStyle": "Butt",
+            "ArcOnTopOfNeedle": false,
+            "Alpha": 255,
+            "Name": "gauge1",
+            "X": 80,
+            "Y": 30,
+            "Width": 320,
+            "Height": 180,
+            "Visible": true,
+            "LockPosition": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "ChangeScreen",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "nextButton"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Screen1"
+            }
+          }
+        ],
+        "Name": "Screen3",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 7200
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "TextEntries": [
+      {
+        "TextEntryId": "SingleUseId1",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId2",
+        "IsResource": false
+      }
+    ],
+    "Name": "Eval_TouchGFX_4_3",
+    "Resolution": {
+      "Width": 480,
+      "Height": 272
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "Screen1",
+    "SelectedStartupLanguage": "GB",
+    "Skin": "Blue",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 480,
+        "Height": 272
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project --project-file=../Eval_TouchGFX_4_3.ioc --platform=m7",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommand": "make -f ../gcc/Makefile -j8",
+    "FlashTargetCommand": "make -f ../gcc/Makefile flash -j8",
+    "FlashTargetCommandOverride": "make -f ../gcc/Makefile flash -j8",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Landscape",
+    "Family": "STM32F7"
+  },
+  "Version": "4.16.0",
+  "CreatedBy": "4.16.0"
+}

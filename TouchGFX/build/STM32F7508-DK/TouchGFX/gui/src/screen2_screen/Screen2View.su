@@ -1,0 +1,10 @@
+Screen.hpp:107:18:virtual void touchgfx::Screen::afterTransition()	0	static
+Screen.hpp:157:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
+Screen2View.hpp:11:13:Screen2View::~Screen2View()	0	static
+Screen2View.cpp:15:6:virtual void Screen2View::tearDownScreen()	0	static
+Screen2View.cpp:78:6:virtual void Screen2View::newGaugeValue()	0	static
+Screen2View.cpp:9:6:virtual void Screen2View::setupScreen()	8	static
+Screen2View.cpp:49:6:virtual void Screen2View::updateIconAndText()	24	static
+Screen2View.hpp:11:13:virtual Screen2View::~Screen2View()	8	static
+Screen2View.cpp:20:6:virtual void Screen2View::handleTickEvent()	16	static
+Screen2View.cpp:4:1:Screen2View::Screen2View()	8	static
