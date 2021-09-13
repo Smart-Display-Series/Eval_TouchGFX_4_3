@@ -161,8 +161,8 @@ Backup*
 *.ABS
 
 # Libraries
-*.lib
-*.LIB
+#*.lib
+#*.LIB
 
 
 # uv output
