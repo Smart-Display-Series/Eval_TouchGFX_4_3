@@ -10,6 +10,13 @@ https://user-images.githubusercontent.com/7386787/133015252-1169cba5-fd76-4768-b
 
 ![PinDefine](https://user-images.githubusercontent.com/7386787/133015329-c7496c4b-105d-4ea3-bf9c-e52942e76433.png)
 
+# Update May 5th, 2023
+  * Add Demo real download video at /Doc/Demo Reel Download.mp4
+  * This video showcases that the development environment for showcasing and burning the hex file is OK.
+    Start by using the STM32CubeProgrammer tool to burn the default factory program.
+    Download the Github (Eval_TouchGFX_4_3) demo program and extract it.
+    Open the project file with TouchGFX 4.16.0, compile the hex file, and update the program by pressing the "run target" button.
+
 
 
 
